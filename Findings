@@ -1,0 +1,27 @@
+CodeBert:
+Masked language modelling
+Bimodal -  Natural language + Programming language 
+We develop CodeBERT by using exactly the same model architecture as RoBERTa-base
+
+12 layers + 12 self attention heads.
+size of each head is 64
+
+One segment is natural language text, and another is code from a certain programming language
+
+Pre-Training Data:
+documentations shorter than three tokens are removed,
+functions shorter than three lines are removed.
+
+function names with substring“test” are removed.
+
+Masked language modelling :
+
+Replaced token detection : RTD :
+
+Generator and discreminator . 
+NVIDIA Tesla V100
+
+We use BLEU-4 score (Papineni et al., 2002) as our evaluation metric
+
+
+
