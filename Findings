@@ -73,8 +73,8 @@ bert_history = bert_model.fit(
 Training with Strategy
 Training with a strategy gives you better
 ------------------------------------------------------------
-Reinforcement Learning | Q-learning 
-
+#Reinforcement Learning | Q-learning 
+--------------------------------
 Agent is being in an Environment . 
 perform certain Action  - change the state s to St+1 
 Get Reward 
