@@ -1,0 +1,750 @@
+population
+sample
+inferential statistics
+descriptive 
+mean
+median
+mode
+standard deviation 
+variance
+skew ->3  (mean - median) /std
+kurtosis -  mu4/mu2   4th power
+qualitative - Nominal|ordinal
+quantitative - Discrete|continuos
+mean - mode = 3 (mean-median)
+range 
+dispersion
+Chebysev's theorem
+1 - 1/k^2
+68-95-99.7 rule
+set theory
+probability
+mutually exclusive P(AuB) = A +B
+independent P(A^B) = A * B
+conditional probability
+posterior prior - likelihood
+Bayesian concept
+confidence interval 
+creditibility interval
+pointestimate
+Continuos random variable
+Probability density function
+cumulative density function 
+Discrete random variable
+Probability mass function 
+Quartiles   50% Q2 
+Q3 + 1.5 IQR  
+Q1 - 1.5 IQR  
+Deciles
+information gain 
+entropy
+Minkowski distance 
+1-norm distance	| 2 norm | n - norm 
+Manhattan distance
+Cosine distance
+Levenshtein distance
+Hamming distance
+equation of line
+plane
+circle
+ellipse
+central limit theorem
+mean  and  variance/n
+Chi-squared distribution
+students t - distribution
+F- distribution 
+R2 and Adjusted R squared ( With Degree of freedom)
+Dirichlet distribution
+Normal
+Log normal
+pareto distribution 
+powerlaw distribution
+poisson's distribition 
+covariance
+correlation 
+pearson correlation
+spearman rank correlation 
+Statistical test :
+Hypothesis testing 
+PAired t- test
+Anova   F-test |f_oneway|f_twoway
+F-test = s1^2/s2^2
+t-test
+chi-squared test
+z-test
+regression 
+non paramteric test
+null hypothesis
+alternate hypothesis
+alpha - significance value
+p- value
+box-cox transformation
+yeo-johnson transformation 
+sampling:
+random sampling
+stratified sampling
+proportional sampling
+Under sampling -TomekLinks
+oversampling -SMOTE
+Bootstrap sampling
+sampling with replacement 
+plots:
+scatter plots
+line plot
+replot
+catplot
+stripplot
+swarmplot
+boxplot  - whisker 
+violin plot
+point plot
+barplot
+countplot
+pairplot
+joint plot
+KDE plot
+regression plot
+Histogram  -  PDF CDF Binning
+Q-Q plot 
+Univariate analysis
+bivariate analysis
+K-S test
+Homoscedasticity 
+variance same 
+Standardization x-mu / std
+Normalization 
+l1 l2 
+minmax scaler 
+robust scaler  - for outlier 
+Covariance matrix 
+Mutual information 
+Variance Thresold
+Fearure scaling 
+imputations
+simpleimputer - mean median mode const
+iterativeimputer
+knnimputer
+mark missing value indicator
+log transformation
+One hot encoding 
+Cat feature encoding 
+binning
+outlier removal
+IQR
+decision tree feature importance
+spot check algo
+math transformation
+logx ,sinx,e^x,sinx cosx x2
+Feature Orthogonality
+Feature slicing
+Calibration of model
+moving average:
+weighted
+exponential
+cumulative M A
+kernel aproximation
+Nystroem | Radial Basis | 
+linear to non linear data
+--------------------------------
+Linear regression
+hypothesis
+equation theta0 theta1
+minimize cost function 
+loss function 
+optimize paramters
+squared error
+why squared error
+plot cost vs theta0,1
+Minimize cost function via Gradient descent 
+it is optimization 
+Normal equation method
+convex and non convex function
+local min , global min
+initialize theta0,1
+alpha , paritial derivative dL/dTheta0,1
+derivative of cost  -  
+batch gradient descent
+multivariate LR
+Why feature scaling
+alpha = 0.001,0.003,0.01
+Normal equation (X-transpose * X)^-1(X-transpose* Y)
+Inverse of matrix - not possible always
+pseudo inverse.
+use regularization 
+No feature scaling in Normal Equation
+logistic regression
+ 0<H<1
+mid around 0.5
+logistic regression cost function 
+Cross entropy  cost function 
+why minus in log
+sigmoid 
+s`(z) = s(z)(1-s(z))
+Mathematical Optimization :
+BFGS
+Newton's
+Hessian method – 2nd differential. For non-quadratic function it takes lot of time to converge
+Multi  class classification 
+One Vs All
+Binary classification 
+Regularization - Over fitting 
+Not penalizing Theta0,
+Regularization on Normal Equation 
+add  lambda * Unit matrix to inverse term
+cost functions :
+hinge loss
+logistic loss
+exponential loss -  Adaboost 
+huber loss - for outliers   - in Robust Regression also in classification
+loss function -  non-covex
+NP hard problem 
+what is convex function 
+2nd order derivative non negative 
+strictly convex | strongly convex 
+
+----
+perceptron -
+binary classifier - no activation function 
+NN -  why we need layer 
+complex calculation  - computational graph 
+Gradient checking
+Bias Variance error
+More Bias:  training error will be high
+Test error will be high
+More Variance: Training error will be less. 
+Testing error will be more.
+error metrics:
+no accuracy on skewed data   ------------------------------doubt 
+Gradient descent with momentum:
+beta, 1-beta
+moving average 
+adagrad 
+RMSPROP
+ADAM 
+Hyperparameters in ADAM:   learning rate | Beta 1  | Beta 2 | epsilon
+learning decay
+layers in NN :
+computational graph 
+backpropagation 
+chain rule of differentiations
+partial derivative 
+initialization of weights
+epoch   	
+forward propagation
+compute loss
+compute derivative ( chain rule & memoizition )
+update weights ( via back propagation
+activation function is easily differentiable
+batchwise backward propagation 
+batch size 64,128,256
+Activation function :
+tanh
+sigmod 
+relu
+softmax
+leaky relu
+gelu
+elu
+Weight initialization:
+Gaussian Initialization
+He
+Glorot 
+fan in fan out
+Batch Normalization 
+Mini batch gradient 
+Exponetial weighted average
+TPU
+AutoEncoder   -
+Encoder Latent/code Decoder 
+Reconstruction  in Decode
+Dimensionality reduction 
+Anomaly detection 
+Tensor board
+model check point 
+callback 
+loss & Val_loss
+Deterministic /Non Deterministic
+quadratic time (2) 
+NP- complete | NP-hard 
+Kernel:
+Non linear data 
+low to high dimension data
+dot product
+dual svm has kernel
+Vectorization reduce loops
+shallow NN Deep NN
+NN output 
+Activation function 
+derivative of activation function 
+Random  initialization -No
+Parameters : W B --weight and bias 
+Hyperparameters:
+Learning rate.
+Number of iterations.
+Number of hidden layers L.
+Number of hidden units n.
+Bias / Variance
+Regularization  Reducec overfiting :
+lambda 
+Dropout  - keep probability
+batch normalization 
+model ensembels
+data augmentation 
+early stopping 
+Vanishing exploding gradients
+-----
+callback 
+Gradient checking 
+Early stopping 
+ModelCheckpoint
+TensorBoard
+LearningRateScheduler
+ReduceLROnPlateau
+LambdaCallback
+TerminateOnNaN -  if loss is Nan terminate 
+CSVlogger  -  log to a csv file
+-----
+
+
+Perceptron vs Logistic regression 
+Logistic regression - uses sigmoid as loss
+perceptron - uses step func as loss
+f(x) = 1 if wx+b >0
+0   otherwise
+Deterministic & Non deterministic 
+same output  
+NP Hard , NP -complete 
+NP-hard - Genetic algorithm 
+kernel 
+use linear classifier to solve non linear problem 
+low to high dimension space
+non-linear data
+dot product of 2  vectors
+standard method dot product O(N^2) time
+kernel method O(N) time 
+dual svm - kernel 
+w = CiYiQ(Xi)
+SVM:
+hyperplane 
+W^TX+B  
+separate -ve and +ve points
+margine increases
+support vectors
+convex hull
+W^TX+b = 1
+W^TX+b = -1
+margin  = 2/W
+hinge loss
+regularizer
+hard margin  = data linearly separable
+soft margin = data nonlinear 
+max(0, 1-Yi(W.Xi - B) ) 
+decision tree:
+entropy - randomness
+p(Yi)log(p(Yi))
+gini impurity 
+information gain 
+IG(Y,X) = H(Y) – H(Y/X)
+H(Y) – Entropy of Y, H(Y/X) – Entropy of Y given X.
+GI - uses for optimal split 
+categorical to numerical feature
+consider Y and do convert
+ensembling
+bagging - bootstrap aggregation 
+boosting
+stacking
+cascading
+bagging:
+sampling with replacement
+D - D1,D2..Di
+build model on new training set
+aggregate them
+random forest  = DT + Bagging+ Column sampling 
+bagging - row sampling with replacement 
+classification - majority rule
+regression - mean or median 
+bagging - low bias high variance model
+Extremely randomized tree:
+Columns sampling + row sampling + Aggregation + randomization
+Boosting:
+combine weak model to build strong model
+low variance and high bias model 
+additively combine 
+take misclassfied points on higher priority on 2nd,3rd model..etc
+Gradient boosting:
+pseudo residuals
+mimimizing loss
+calculate avg of target 
+residual = actual - avg
+fit model on residual and get new residual
+from residual calculate actual
+171 + learning rate * new predicted residual.
+Adaboost:
+More weights -->given to misclassified points
+stub - not fully grown tree 
+XGBOOSt - Gradient boost + column sampling + Row sampling
+adaboost loss - exp( -yf(x))
+exponential loss
+stacking: 
+parallel model 
+use metaclassifier  to combine 
+logistic regression 
+cascading:
+use lot of model 
+when accuracy is more important
+cancer prediction 
+ridge regression :
+l2 regularization
+lasso:
+l1
+AIC – Akaike Information Criterion, 
+BIC – Bayes information criteria
+elastic net:
+l1 and l2 
+RANSAC :
+random sample consensus
+outlier 
+inliner based on thresold
+anomaly detection :
+one class svm
+local outlier factor
+Isolation forest
+DBSCAN 
+Hidden markov model
+-------
+Unsupervised :
+Matrix * Eign vector = eign value * Eign Vector
+Singular value decomposition 
+mixture model -  
+mixture of distributions
+multimodal
+expectation maximization 
+find the missing data -
+from observed data 
+update value of paramters 
+E step
+M step
+closed form of solution 
+no limit,differentiation,integration 
+maximum likelihood estimation 
+determines the value of parameter of model
+kullback leibler Divergence
+relative entropy 
+Dkl(P//Q) = 	P(x)log P(x)/Q(x)
+Dirichlet process
+distribution of a distribution 
+stick breaking process
+rich get reacher 
+base distribution 
+concentration parameter 
+manifold learning 
+non linear dimensionality reduction 
+topological space -set of points
+set of neghborhood - 
+satisfying set of axioms
+homeomorphic
+circle point
+random projection  - 
+strcture of data lost
+ISOMAP:
+low dimensional embedding 
+geodessic distance 
+Imagine Circle,  between 2 far points it is a curvy distances
+Euclidian distance is straight line between 2 point
+non linear dimensionality reduction :
+-calculate nearest neighbor
+-build weight matrices for each point based on distances
+-eign vector and value decomposition
+
+local linear embedding 
+
+What is Laplacian – it is sum of second order derivative 
+Hessian – is only second order derivative .
+MDS: 
+(||xi - xj|| - Dij )^2
+t-SNE
+t stochastic neighborhood emebdding
+perplexity -  K - nearest neighbor
+no of neighbors/points it should consider 
+leanring rate 
+max iteration 
+Convert d dimension points  to 2d
+crowding problem 
+The Kullback-Leibler (KL) divergence of the joint probabilities 
+
+k-means clustering :
+centrod based
+Optimization is NP-Hard
+K - centroid.
+voronoi diagram 
+elbow method  find K
+how to choose centroid
+K-means++
+K-Median : K -Medoid
+KD-tree
+Ball Tree
+DBSCAN:
+Density based spatial clustering and Noise.
+Core point
+noise point 
+eps - radius of  distance 
+cluster evaluation :
+Internal Evaluation:
+high similarity within a cluster and
+low similarity between clusters
+Dunn Index
+External evaluation:
+bench mark set by human expert
+Rand index
+F-Measures
+Fowlkes–Mallows index
+Mutual Information
+Biclustering:
+column and row clustering 
+PCA:
+incremental PCA
+Kernel PCA
+
+SVD:
+Left singular vector 
+Singluar value
+right singular vector 
+singular value  - diagonal matrix
+T-SVD 
+Truncated 
+T-largest singular value.
+
+Dictionary learning 
+Factor analysis:
+Xi = Whi+mu+epsilon(error)
+
+Non negative factorization 
+A= XY
+M*N = M*R + R*N 
+decompose A to X Y
+||A- WH||^2  minimize 
+Frobenius theorem 
+
+Latent dirichlet allocation
+Topic Modelling 
+words merged  into documents
+Each word belongs to a Topic 
+Latent Semantic analysis
+
+Empirical covariance 
+Shrunk covariance – empirical cov with shrunk 
+Robust covariance: Uses Mahalonbis  distance.
+
+OneClassSVM
+Isolation Forest
+randomly selecting a feature 
+randomly selecting a split
+Local Outlier Factor:
+LOF <1 - no outlier
+Reachability-distance( k )(A,B)  
+Reachability Density
+
+Density estimation:
+with histogram and Kernel density estimator
+PCA:
+standardize variables 
+Covariance matrix computations
+COMPUTE THE EIGENVECTORS AND EIGENVALUES 
+OF THE COVARIANCE MATRIX TO IDENTIFY THE PRINCIPAL COMPONENTS
+
+Mahalanobis Distance 
+D^2 = [{Xi – mean(X) }* {Yi – mean(Y)} ] / covariance matrix(x,y)
+----------------
+RNN
+notation 
+representing words 
+dictionary, Vocabulary, 30k-50k
+<start><end><unk>
+why rnn
+I/P O/P have different length
+Normal NN, It has same length
+padding can be used
+but will not be good model
+Feature sharing like CNN
+Wxa
+Waa
+Wya
+BiRNN
+A^t = g(W{A^t-1,X^t}+b)
+Backpropagation through time 
+activation function - Tanh|relu | in hidden layer
+y = sigmoid/softmax  in output layer 
+cross entropy loss | log loss
+types of rnn:
+1:1,1:M, M:1, M:M
+encoder decoder 
+language model 
+p(y<1>, y<2>, y<3>) = p(y<1>) * p(y<2> | y<1>) * p(y<3> | y<1>, y<2>)
+char level language model
+Vanishing gradient - 10k time step
+HE initialization 
+echostate n/w - sparcely connected N/W
+LSTM/GRU
+exploding gradient - gradient clipping
+
+GRU:
+equation : Update gate | reset gate | cell state 
+LSTM:
+input gate
+update gate 
+forget gate
+output gate 
+
+Peephole Lstm 
+gate depends on Hidden state , and 
+internal state Ct-1
+birnn  -  acyclic
+deep rnn
+
+Word representation - word embedding
+featurized representation
+cosine similarity
+cosine distance = 1 - cosine similarity
+embedding matrix
+300*10000 , 10000*1 = 300,1
+word2vec :
+skipgram | Continuos Bag of words |
+Hierarchical softmax classifier
+Negative Sampling
+debiasing word embedding
+beam search : 
+BLUE score : bilingual evaluation understudy
+Attention Model :
+Bi Encoder
+Decoder 
+sum of attention 1 
+attention for each word.
+How to calculate attention 
+Hidden state of Encoder +
+Hidden state of decoder 
+use small NN with softmax 
+Speech recognition 
+
+Audio |Speech recognition 
+little variations in air pressure over time
+Speech recognition with Attention 
+Triggered word detection 
+--------------------
+Convolutions: math- flip filter/function 
+why convolutions 
+Edge detection 
+Paramter sharing 
+scale invariant 
+1k*1k = 3m * 1000 = 3B
+Vertical edge |horizontal edge
+sobel filter
+scharr filter 
+Padding 
+Why - to avoid shrinkage of image
+throwing lot of info at edges
+Stride:
+n+2p-f/s  +1
+Filter size same =>parameter same
+conv - pooling - fullyconnected
+max pooling 
+dconvolutions - transposed convolution 
+Convolution with stride 2 and padding , produces same as input layer. Hence deconvolution .
+Lenet -5
+Alexnet 
+VGG
+Residual N/W
+Resudual block
+skip connections
+helps in Vanshing ,Exploding gradient
+No Fully connected in resnet
+1*1 convolution 
+shrink no of channel
+Inception n/w
+use 1*1 convolution
+reduce parameters
+use 1*1,then 3*3,then 5*5 convolution
+transfer learning 
+the parameters frozen  
+trainable  = 0
+remove softmax
+freeze few layers from the beginning 
+fine tune all the layers  - do not randomize parameters weight
+Data augmentation:
+mirroring
+random cropping
+shearing | Rotation |Lighting 
+clor shifting 
+less data  - complex algo
+ensembling 
+
+Imag classification 
+object detection :
+semantic segmentation 
+detects no object but pixel
+instance segmentation 
+classification with localization 
+bxby bh bw  c1,c2 c3,c4  for 4 types of 
+object detection 
+loss function :
+L(y,y`) = L(y1 - y1`) + L(y2-y2`)+...
+
+Landmark detection :  
+train on 64 marks in faces to identify the face 
+Object detection : Sliding window 
+train a Conv net on cropped car images and non car images.
+same conv net  - use for sliding window 
+small and large rectangle , feed to conv net,repeate steps
+two or more rectangles intersects choose the rectangle with the best accuracy
+
+yolo
+boundig box problem 
+Intersection over union > 0.5
+Non-Max Supression 
+YOLO detects the object just once
+discard where  Pc < 0.6
+
+Anchor box : 
+grid cell wants to detect multiple object?
+
+R-CNN
+
+Face verification : 1:1
+Face Recognition  1: n
+Use face verification to use face recognition 
+
+One Shot Learning
+recognize person from one image 
+similarity function 
+d( img1, img2 ) = degree of difference between images.
+If d( img1, img2 ) <= T  faces  are same
+implement similarity function - 
+Siamese Network
+2 identical conv nets which encodes an input image into a vector
+
+triplet loss
+Anchor image and a positive or a negative image.
+||f(A) - f(P)||^2 <= ||f(A) - f(N)||^2
+Manhattan distance between f(x(i)) and f(x(j))
+FaceNet
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
