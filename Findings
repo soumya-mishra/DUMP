@@ -1,4 +1,5 @@
-CodeBert:
+codebert:
+https://www.groundai.com/project/codebert-a-pre-trained-model-for-programming-and-natural-languages/1
 Masked language modelling
 Bimodal -  Natural language + Programming language 
 We develop CodeBERT by using exactly the same model architecture as RoBERTa-base
@@ -22,6 +23,52 @@ Generator and discreminator .
 NVIDIA Tesla V100
 
 We use BLEU-4 score (Papineni et al., 2002) as our evaluation metric
+-----------------
+Natural language code search
+code document generations 
 
+so in the bert model  part A -  Natural language sentence   part B- Senetence for CODE 
 
+doing attention both natural language and programming languages
+
+replaced token detection  (RTD)
+
+Tried with RoBERT  and CodeBERT
+------------------------------
+ from transformers import RobertaConfig, RobertaModel
+ configuration = RobertaConfig()
+ model = RobertaModel(configuration)
+ configuration = model.config
+ 
+ RobertaTokenizer:
+ -------------------------
+ from transformers import RobertaTokenizer
+ tokenizer = RobertaTokenizer.from_pretrained("roberta-base")
+ 
+ RoBERTa Tokenizer  Uses character level encoding 
+ 
+ BERT:  encoding 
+ [CLS] A [SEP] B [SEP]
+
+while RoBERTa encodes the sequence pair differently:
+
+[CLS] A [SEP][SEP] B [SEP]
+
+train_dataset = glue_convert_examples_to_features(train_dataset, bert_tokenizer, 128, 'mrpc')
+
+optimizer = tf.keras.optimizers.Adam(learning_rate=3e-5, epsilon=1e-08, clipnorm=1.0)
+loss = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+metric = tf.keras.metrics.SparseCategoricalAccuracy('accuracy')
+bert_model.compile(optimizer=optimizer, loss=loss, metrics=[metric])
+
+bert_history = bert_model.fit(
+ bert_train_dataset, 
+ epochs=2, 
+ steps_per_epoch=115, 
+ validation_data=bert_validation_dataset, 
+ validation_steps=7
+)
+
+Training with Strategy
+Training with a strategy gives you better
 
